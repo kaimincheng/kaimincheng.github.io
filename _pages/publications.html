@@ -5,32 +5,79 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p>This page lists my recent publications and preprints (2024–2026).
+For a more complete record, please visit my
+<a href="https://scholar.google.com/citations?user=mmb6CK8AAAAJ&amp;hl=en">Google Scholar profile</a>.
+</p>
 
-{% include base_path %}
+<h2>2026</h2>
+<ol>
+  <li style="margin-bottom: 1.1em;">
+    <strong>The 3-sparsity of <i>X</i><sup>n</sup> − 1 over finite fields of characteristic two</strong><br />
+    Kaimin Cheng.<br />
+    <em>Transactions of the London Mathematical Society 13 (2026), e70026</em>.
+    &nbsp;[<a href="https://doi.org/10.1112/tlm3.70026">DOI</a>]
+  </li>
+  <li style="margin-bottom: 1.1em;">
+    <strong>Multiplicative character sums over two classes of subsets of quadratic extensions of finite fields</strong><br />
+    Kaimin Cheng and Arne Winterhof.<br />
+    <em>Finite Fields and Their Applications 111 (2026), 102767</em>.
+    &nbsp;[<a href="https://doi.org/10.1016/j.ffa.2025.102767">DOI</a>]
+  </li>
+  <li style="margin-bottom: 1.1em;">
+    <strong>Weight distribution of a class of <i>p</i>-ary codes</strong><br />
+    Kaimin Cheng and Du Sheng.<br />
+    <em>Applicable Algebra in Engineering, Communication and Computing 37 (2026), 1373–1389</em>.
+    &nbsp;[<a href="https://doi.org/10.1007/s00200-025-00708-3">DOI</a> | <a href="https://arxiv.org/abs/2503.19141">arXiv</a>]
+  </li>
+</ol>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<h2>2025</h2>
+<ol>
+  <li style="margin-bottom: 1.1em;">
+    <strong>The inverse stability of Artin–Schreier polynomials over finite fields</strong><br />
+    Kaimin Cheng.<br />
+    <em>Designs, Codes and Cryptography 93 (2025), 4515–4523</em>.
+    &nbsp;[<a href="https://doi.org/10.1007/s10623-025-01690-0">DOI</a>]
+  </li>
+  <li style="margin-bottom: 1.1em;">
+    <strong>Counting irreducible polynomials with restricted coefficients</strong><br />
+    Kaimin Cheng.<br />
+    <em>Finite Fields and Their Applications 108 (2025), 102691</em>.
+    &nbsp;[<a href="https://doi.org/10.1016/j.ffa.2025.102691">DOI</a>]
+  </li>
+  <li style="margin-bottom: 1.1em;">
+    <strong>On binomial Weil sums and an application</strong><br />
+    Kaimin Cheng and Shuhong Gao.<br />
+    <em>Cryptography and Communications 17 (2025), 1173–1190</em>.
+    &nbsp;[<a href="https://doi.org/10.1007/s12095-025-00810-w">DOI</a> | <a href="https://arxiv.org/abs/2409.13515">arXiv</a>]
+  </li>
+  <li style="margin-bottom: 1.1em;">
+    <strong>A class of ternary codes with few weights</strong><br />
+    Kaimin Cheng.<br />
+    <em>Designs, Codes and Cryptography 93 (2025), 2395–2414</em>.
+    &nbsp;[<a href="https://doi.org/10.1007/s10623-025-01605-z">DOI</a> | <a href="https://arxiv.org/abs/2410.04216">arXiv</a>]
+  </li>
+  <li style="margin-bottom: 1.1em;">
+    <strong>Counting solutions to a system of quadratic form equations over finite fields</strong><br />
+    Xiaodie Luo and Kaimin Cheng.<br />
+    <em>AIMS Mathematics 10 (2025), 13741–13754</em>.
+    &nbsp;[<a href="https://doi.org/10.3934/math.2025619">DOI</a>]
+  </li>
+</ol>
 
-
-
+<h2>2024</h2>
+<ol>
+  <li style="margin-bottom: 1.1em;">
+    <strong>On LCD codes from skew symmetric Toeplitz matrices</strong><br />
+    Kaimin Cheng.<br />
+    <em>Finite Fields and Their Applications 95 (2024), 102380</em>.
+    &nbsp;[<a href="https://doi.org/10.1016/j.ffa.2024.102380">DOI</a>]
+  </li>
+  <li style="margin-bottom: 1.1em;">
+    <strong>A new direction on constructing irreducible polynomials over finite fields</strong><br />
+    Kaimin Cheng.<br />
+    <em>Finite Fields and Their Applications 95 (2024), 102368</em>.
+    &nbsp;[<a href="https://doi.org/10.1016/j.ffa.2024.102368">DOI</a>]
+  </li>
+</ol>
