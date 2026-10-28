@@ -1,7 +1,8 @@
 ---
 title: "Inverse stability of linearized polynomials over finite fields"
 collection: talks
-type: "Talk invited by Quan Liu of Wuhan University"
+type: "Seminar Talk"
+venue: "Invited to give a talk in Wuhan University by Liuquan Wang"
 permalink: /talks/2026-04-17-inverse-stability-linearized/
 date: 2026-04-17
 ---
