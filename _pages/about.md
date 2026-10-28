@@ -10,29 +10,30 @@ redirect_from:
 
 # Kaimin Cheng
 
-Welcome to my academic homepage.
+I am a researcher at China West Normal University,
+Nanchong, China.
 
 ## Research Interests
 
-My research interests include:
+My research interests lie primarily in finite
+fields, number theory, and combinatorics,
+with particular emphasis on:
 
-- Finite fields and their applications
-- Number theory
-- Combinatorics
-- Cryptographic functions
-- Permutation polynomials
-- Irreducible polynomials over finite fields
+- Polynomials over finite fields
+- Arithmetic and combinatorial problems
+- Cryptographic functions and APN functions
+- Exponential sums over finite fields
+
 
 ## Publications
 
-My research papers and preprints are listed
+My publications and preprints are available
 on the Publications page.
 
 ## Teaching
 
 Information about my teaching activities
-and course materials can be found on
-the Teaching page.
+can be found on the Teaching page.
 
 
 For more info
