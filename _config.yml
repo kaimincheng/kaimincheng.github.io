@@ -22,13 +22,13 @@ repository: "kaimincheng/kaimincheng.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Kaimin Cheng"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Research in Finite Fields, Number Theory, and Combinatorics"
   location         : "Earth"
-  employer         : "Red Brick University"
+  employer         : "China West Normal University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "ckm20@126.com;kcheng1020@gmail.com;kmcheng@cwnu.edu.cn" 
 
   # Academic websites
   academia         : # URL
