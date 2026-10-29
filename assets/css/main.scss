@@ -36,3 +36,61 @@
     "layout/archive",
     "layout/sidebar"
 ;
+
+
+/* =========================================
+   Academic homepage layout improvements
+   ========================================= */
+
+/* Separate sidebar from main content */
+@media screen and (min-width: 1024px) {
+  #main > .sidebar {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding-top: 0 !important;
+    padding-right: 1.5rem !important;
+    border-right: 1px solid var(--global-border-color);
+  }
+
+  #main > .archive,
+  #main > .page {
+    padding-left: 2.5rem !important;
+  }
+}
+
+/* Remove unnecessary bottom spacing */
+body {
+  padding-bottom: 0 !important;
+}
+
+/* Put footer below the page content */
+.page__footer {
+  position: relative !important;
+  bottom: auto !important;
+  height: auto !important;
+  margin-top: 2rem !important;
+  background-color: var(--global-bg-color) !important;
+  color: var(--global-text-color) !important;
+  border-top: 1px solid var(--global-border-color);
+}
+
+/* Compact footer */
+.page__footer footer {
+  margin-top: 0 !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.page__footer-follow li {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.page__footer-copyright {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
