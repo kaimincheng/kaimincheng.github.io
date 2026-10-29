@@ -1,26 +1,21 @@
+
 ---
 ---
 
 /*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * Main stylesheet for the academic homepage.
+ * Original AcademicPages imports are preserved.
  */
 
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -29,53 +24,112 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar"
 ;
 
-
 /* =========================================
-   Academic homepage layout improvements
+   1. Author profile
    ========================================= */
 
-/* Separate sidebar from main content */
+/* Keep the name in the top navigation only */
+.sidebar .author__name {
+  display: none !important;
+}
+
+/* Long affiliation names should wrap */
+.sidebar .author__urls li {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+
+.sidebar .author__urls {
+  max-width: 100%;
+}
+
+/* Avoid independently scrolling sidebar */
+#main > .sidebar {
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  padding-top: 0 !important;
+}
+
+/* =========================================
+   2. Desktop two-column layout
+   ========================================= */
+
 @media screen and (min-width: 1024px) {
+
+  #main {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
   #main > .sidebar {
-    position: relative !important;
-    top: auto !important;
-    bottom: auto !important;
-    height: auto !important;
-    max-height: none !important;
-    overflow: visible !important;
-    padding-top: 0 !important;
-    padding-right: 1.5rem !important;
-    border-right: 1px solid var(--global-border-color);
+    float: none !important;
+    flex: 0 0 255px;
+    width: 255px !important;
+    max-width: none !important;
+    box-sizing: border-box;
+
+    margin: 0 !important;
+    padding: 1rem 1.25rem 1rem 0 !important;
+
+    border-right: 1px solid
+      var(--global-border-color);
   }
 
   #main > .archive,
   #main > .page {
-    padding-left: 2.5rem !important;
+    float: none !important;
+    flex: 1 1 0;
+    width: auto !important;
+    min-width: 0;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .sidebar .author__urls li {
+    line-height: 1.6;
+    margin-bottom: 0.35rem;
   }
 }
 
-/* Remove unnecessary bottom spacing */
+/* =========================================
+   3. Footer
+   ========================================= */
+
+/* Remove space reserved for fixed footer */
 body {
   padding-bottom: 0 !important;
 }
 
-/* Put footer below the page content */
+/* Footer follows page content */
 .page__footer {
   position: relative !important;
   bottom: auto !important;
   height: auto !important;
+  float: none !important;
+  clear: both;
+
   margin-top: 2rem !important;
-  background-color: var(--global-bg-color) !important;
-  color: var(--global-text-color) !important;
-  border-top: 1px solid var(--global-border-color);
+
+  background-color:
+    var(--global-bg-color) !important;
+  color:
+    var(--global-text-color) !important;
+
+  border-top: 1px solid
+    var(--global-border-color);
 }
 
 /* Compact footer */
@@ -93,4 +147,22 @@ body {
 .page__footer-copyright {
   font-size: 0.75rem;
   line-height: 1.5;
+}
+
+/* =========================================
+   4. Mobile and tablet adjustments
+   ========================================= */
+
+@media screen and (max-width: 1023px) {
+
+  #main > .sidebar {
+    border-right: none;
+    width: auto;
+    max-width: 100%;
+  }
+
+  #main > .archive,
+  #main > .page {
+    padding-left: 0 !important;
+  }
 }
